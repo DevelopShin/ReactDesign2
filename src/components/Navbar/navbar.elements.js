@@ -70,8 +70,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   list-style: none;
-  align-items: center;
-  text-align: center;
+
 
   @media screen and ( max-width: 960px) {
     display: flex;
@@ -93,7 +92,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
-
+  /* align-items: center;
+  text-align: center; */
   &:hover {
     border-bottom: 2px solid #4b59f7
   }
@@ -125,4 +125,14 @@ export const NavLinks = styled(Link)`
       transition: all 0.3s ease;
     }
   }
+`
+
+export const BtnLinks = styled(Link)`
+  height: 100%;
+  display: flex;
+  align-items:center;
+  text-decoration: none;
+  padding: 0 0.5rem;
+  
+
 `
