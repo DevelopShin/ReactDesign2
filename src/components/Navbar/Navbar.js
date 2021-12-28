@@ -10,7 +10,7 @@ function Navbar() {
   }
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      {/* <IconContext.Provider value={{ color: '#fff' }}> */}
         <Nav>
           <NavbarContainer>
             <NavLogo to='/'>
@@ -44,7 +44,7 @@ function Navbar() {
             {/* </MenuWrap> */}
           </NavbarContainer>
         </Nav>
-      </IconContext.Provider>
+      {/* </IconContext.Provider> */}
     </>
   )
 }

@@ -1,11 +1,16 @@
 import React from 'react'
 import InfoSection from '../../components/InfoSection/InfoSection'
-import { homeObjOne } from './Data'
+import { infoData } from './Data'
 function Home() {
   return (
-    <div>
-      <InfoSection homeObjOne={homeObjOne}/>
-    </div>
+    <>
+      {infoData.map((data,index) =>(
+        <InfoSection key={index} homeObjOne={data}/>  
+      ))}
+      {/* <InfoSection homeObjOne={infoData[0]}/>
+      <InfoSection homeObjOne={infoData[1]}/> */}
+
+    </>
   )
 }
 
